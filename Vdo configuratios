@@ -1,0 +1,8 @@
+yum install kmod-kvdo* vdo* -y
+systemctl --now enable vdo
+systemctl start vdo
+systemctl enable vdo
+systemctl status vdo
+lsblk
+fdisk -l
+vdo create --name=Vdo1 --device=/dev/
